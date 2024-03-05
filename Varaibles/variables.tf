@@ -5,5 +5,5 @@ variable "ami_id" {
 
 variable "instance_type" {
   # type = string # this is the data type
-  default = t2.micro
+  default = "t2.micro"
 }
