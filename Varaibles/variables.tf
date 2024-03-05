@@ -7,3 +7,12 @@ variable "instance_type" {
   # type = string # this is the data type
   default = "t2.micro"
 }
+
+variable "sg_name" {
+  default = "Allow-All"
+}
+
+variable "sg_cidr" {
+  type = list
+  default = ["0.0.0.0/0"]
+}
