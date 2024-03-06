@@ -16,3 +16,16 @@ variable "sg_cidr" {
   type = list
   default = ["0.0.0.0/0"]
 }
+
+# Tags is nothing but Key Value Pairs. 
+
+variable "tags" {
+  type = map
+  default = {
+    Name = "MongoDB"
+      Environment = "DEV"
+      Terraform = "true"
+      Project = "Roboshop"
+      Component = "MongoDB"
+  }
+}

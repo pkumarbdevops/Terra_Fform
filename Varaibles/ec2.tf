@@ -8,3 +8,14 @@
      instance_type = var.instance_type
      security_groups = [aws_security_group.Allow_All.name]
  }
+
+ # tags = {
+    #     Name = "MongoDB"
+    #     Environment = "DEV"
+    #     Terraform = "true"
+    #     Project = "Roboshop"
+    #     Component = "MongoDB"
+    # }
+
+tags = var.tags
+}
