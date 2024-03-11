@@ -11,3 +11,11 @@ data "aws_ami" "ami_id" {
 output "ami_id" {
   value = data.aws_ami.ami_id.id
 }
+# Below are shown as Fetching the Default VPC Details
+data "aws_vpc" "default" {                                                                                                                            
+  default = true                                                                                                                                      
+} 
+
+output "vpc_info" {
+  value = data.aws_vpc.default
+}
